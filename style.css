@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #1e293b;
+  color: #0f172a;
+}
+
+.jogo {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 480px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+  color: #1e293b;
+}
+
+.dica {
+  background-color: #f1f5f9;
+  color: #475569;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+#palavra {
+  font-size: 2.2rem;
+  font-weight: bold;
+  letter-spacing: 6px;
+  margin: 24px 0;
+  color: #0284c7;
+  word-break: break-all;
+}
+
+.status {
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+}
+
+.controles label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.input-grupo {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+input {
+  width: 55px;
+  padding: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #0284c7;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #0284c7;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0369a1;
+}
+
+button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+#btn-reiniciar {
+  background-color: #10b981;
+  margin-top: 15px;
+  width: 100%;
+}
+
+#btn-reiniciar:hover {
+  background-color: #059669;
+}
+
+#mensagem {
+  min-height: 24px;
+  font-weight: bold;
+  margin: 18px 0;
+  font-size: 1.05rem;
+}
+
+.acerto { color: #16a34a; }
+.erro { color: #dc2626; }
+.aviso { color: #d97706; }
+
+.info-extra {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 15px;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.placar {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}

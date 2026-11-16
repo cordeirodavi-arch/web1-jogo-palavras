@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação - Web I</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="jogo">
+        <header>
+            <h1>Adivinhe a Palavra</h1>
+            <p id="dica" class="dica">Dica: ...</p>
+        </header>
+
+        <section aria-label="Área da palavra">
+            <p id="palavra">_ _ _ _ _</p>
+            <p class="status">Tentativas restantes: <strong id="tentativas">6</strong></p>
+        </section>
+
+        <section class="controles" aria-label="Controles do jogo">
+            <label for="letra">Digite uma letra:</label>
+            <div class="input-grupo">
+                <input id="letra" type="text" maxlength="1" autocomplete="off" autofocus>
+                <button id="btn-tentar">Tentar</button>
+            </div>
+        </section>
+
+        <p id="mensagem" role="status"></p>
+
+        <section class="info-extra">
+            <p>Letras utilizadas: <span id="letras-usadas">Nenhuma</span></p>
+            <div class="placar">
+                <span>Vitórias: <strong id="vitorias">0</strong></span> |
+                <span>Derrotas: <strong id="derrotas">0</strong></span>
+            </div>
+        </section>
+
+        <footer>
+            <button id="btn-reiniciar">Nova partida</button>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
